@@ -4,26 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/FoodItems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/FoodItemsFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/Items.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/Meat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/Milk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/NonFoodItems.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/RunShop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/FoodItemsFactoryTest.java" afterDir="false" />
+    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/FoodItemsFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/FoodItemsFactoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +29,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -57,15 +44,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -74,7 +62,7 @@
       <recent name="edu.nbu.projectshop" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.FoodItemsFactoryTest.createInstance">
     <configuration name="RunShop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.RunShop" />
       <module name="projectshop" />
@@ -88,8 +76,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FoodItemsFactoryTest.createInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="projectshop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nbu.projectshop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nbu.projectshop" />
+      <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.FoodItemsFactoryTest" />
+      <option name="METHOD_NAME" value="createInstance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FoodItemsFactoryTest.createInstance" />
         <item itemvalue="Application.RunShop" />
       </list>
     </recent_temporary>
@@ -103,6 +108,14 @@
       <option name="presentableId" value="Default" />
       <updated>1677762741539</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1677767481600</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677767481601</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,5 +128,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>
