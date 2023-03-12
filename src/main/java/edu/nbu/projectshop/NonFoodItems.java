@@ -6,4 +6,5 @@ public abstract class NonFoodItems implements Items{
     public Double calculateProfitMargin(String typeItems){
         return 0.0;
     }
+
 }

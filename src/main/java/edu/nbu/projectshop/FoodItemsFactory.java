@@ -1,5 +1,7 @@
 package edu.nbu.projectshop;
 
+import edu.nbu.projectshop.tools.GenerateIdNumber;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +18,7 @@ public class FoodItemsFactory {
                 case "milk":
                     return new Milk();
                 case "meat":
-                    return new Meat();
+                    return new Meat(GenerateIdNumber.generateId());
             }
         }
         return null;

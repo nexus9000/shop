@@ -3,13 +3,13 @@ package edu.nbu.projectshop;
 import java.util.Date;
 
 public class Milk extends FoodItems{
-   private Long idNum;
+   private Integer idNum;
 
-   public void setIdNum(Long idNum){
+   public void setIdNum(Integer idNum){
        this.idNum = idNum;
    }
     @Override
-    public Long getIndemnificationNumber() {
+    public Integer getIndentificationNumber() {
         return idNum;
     }
 

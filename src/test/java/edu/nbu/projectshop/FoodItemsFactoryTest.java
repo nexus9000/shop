@@ -4,8 +4,7 @@ import org.junit.jupiter.api.Assertions;
 
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.Objects;
 
 class FoodItemsFactoryTest {
     private List<String> foodLists;
@@ -19,6 +18,6 @@ class FoodItemsFactoryTest {
         FoodItemsFactory fif = new FoodItemsFactory(foodLists);
         Milk milk = (Milk) fif.createInstance("milk");
         Assertions.assertTrue(Items.class.isAssignableFrom(Milk.class));
-        Assertions.assertTrue(milk instanceof Items);
+        Assertions.assertTrue(Objects.nonNull(milk));
     }
 }

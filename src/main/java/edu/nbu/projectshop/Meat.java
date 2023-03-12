@@ -3,9 +3,17 @@ package edu.nbu.projectshop;
 import java.util.Date;
 
 public class Meat extends FoodItems{
+    private final Integer identificationNumber;
+    private double deliveryPrice;
+    private double finalPrice;
+
+    public Meat(Integer identificationNumber){
+        this.identificationNumber = identificationNumber;
+    }
+
     @Override
-    public Long getIndemnificationNumber() {
-        return null;
+    public Integer getIndentificationNumber() {
+        return identificationNumber;
     }
 
     @Override
