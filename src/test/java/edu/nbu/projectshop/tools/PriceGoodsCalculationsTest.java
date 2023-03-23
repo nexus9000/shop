@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -13,8 +14,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PriceGoodsCalculationsTest {
 private final String productionDate = "2023-02-02";
-private final double deliveryPrice = 10.01;
-private final double percentage = 20.05;
+private final BigDecimal deliveryPrice = BigDecimal.valueOf(10.00);
+private final BigDecimal percentage = BigDecimal.valueOf(1.0);
 private Date prDate;//date of production
 private Date currentDate;
 private PriceGoodsCalculations pgc;
@@ -50,7 +51,7 @@ private PriceGoodsCalculations pgc;
     @DisplayName("Test price item with discount")
     void testDiscountPrice()throws RuntimeException{
         int period = 60;//product  in days
-        double priceDiscount = pgc.calculateRealPrice(currentDate, prDate, period);
+        BigDecimal priceDiscount = pgc.calculateRealPrice(currentDate, prDate, period);
         System.out.println(priceDiscount);
     }
 }

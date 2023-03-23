@@ -1,11 +1,14 @@
 package edu.nbu.projectshop.tools;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class PriceFoodsCalculation implements PriceCalculations{
+
+
     @Override
-    public double priceCalculation(double percentage, double deliveryPrice) {
-        return 0;
+    public BigDecimal priceCalculation(BigDecimal percentage, BigDecimal deliveryPrice) {
+        return null;
     }
 
     @Override

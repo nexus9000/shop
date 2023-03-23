@@ -1,16 +1,17 @@
 package edu.nbu.projectshop.tools;
 
+import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.Date;
 
 
 public class PriceGoodsCalculations implements PriceCalculations {
-    private final double deliveryPrice;
-    private final double percentage;
+    private final BigDecimal deliveryPrice;
+    private final BigDecimal percentage;
     private final Date productionDate;
     private Date expDate;
 
-    public PriceGoodsCalculations(double deliveryPrice, double percentage, Date productionDate) {
+    public PriceGoodsCalculations(BigDecimal deliveryPrice, BigDecimal percentage, Date productionDate) {
         this.deliveryPrice = deliveryPrice;
         this.percentage = percentage;
         this.productionDate = productionDate;
@@ -18,9 +19,11 @@ public class PriceGoodsCalculations implements PriceCalculations {
     }
 
     @Override
-    public double priceCalculation(double percentage, double deliveryPrice) {
-        return deliveryPrice * percentage;
+    public BigDecimal priceCalculation(BigDecimal percentage, BigDecimal deliveryPrice) {
+        return percentage.multiply(deliveryPrice);
     }
+
+
 
     @Override
     public boolean checkExpirationDate(Date currentDate, Date productionDate, int period) {
@@ -36,8 +39,8 @@ public class PriceGoodsCalculations implements PriceCalculations {
     public String toString() {
         return "PriceGoodsCalculations{}";
     }
-    public double calculateRealPrice(Date currentDate,Date productionDate, int period)throws RuntimeException{
-        double price = 0.0;
+    public BigDecimal calculateRealPrice(Date currentDate,Date productionDate, int period)throws RuntimeException{
+        BigDecimal price = BigDecimal.valueOf(0.0);
         if(checkExpirationDate(currentDate,productionDate,period)){
             price = priceCalculation(deliveryPrice, percentage);
             Calendar calendar = Calendar.getInstance();
@@ -45,7 +48,7 @@ public class PriceGoodsCalculations implements PriceCalculations {
             calendar.add(Calendar.DATE, -3);
             Date mark = calendar.getTime();
             if(currentDate.compareTo(mark) == 0){
-                price *= 0.8;
+               price.multiply(BigDecimal.valueOf(0.8));
             }else{
                 return price;
             }
