@@ -7,6 +7,8 @@
     <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/PriceGoodsCalculations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/PriceGoodsCalculations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/PriceGoodsCalculationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/PriceGoodsCalculationsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,36 +64,7 @@
       <recent name="edu.nbu.projectshop" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PriceGoodsCalculationsTest.priceCalculation">
-    <configuration name="RunShop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.RunShop" />
-      <module name="projectshop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.nbu.projectshop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FoodItemsFactoryTest.createInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="projectshop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.nbu.projectshop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.nbu.projectshop" />
-      <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.FoodItemsFactoryTest" />
-      <option name="METHOD_NAME" value="createInstance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PriceGoodsCalculationsTest.testDiscountPrice">
     <configuration name="GenerateIdNumberTest.testId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="projectshop" />
       <extension name="coverage">
@@ -140,13 +113,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PriceGoodsCalculationsTest.testDiscountPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="projectshop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nbu.projectshop.tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nbu.projectshop.tools" />
+      <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.tools.PriceGoodsCalculationsTest" />
+      <option name="METHOD_NAME" value="testDiscountPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PriceGoodsCalculationsTest.testPriceItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="projectshop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nbu.projectshop.tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nbu.projectshop.tools" />
+      <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.tools.PriceGoodsCalculationsTest" />
+      <option name="METHOD_NAME" value="testPriceItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PriceGoodsCalculationsTest.testDiscountPrice" />
+        <item itemvalue="JUnit.PriceGoodsCalculationsTest.testPriceItem" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.priceCalculation" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.checkExpirationDate" />
         <item itemvalue="JUnit.GenerateIdNumberTest.testId" />
-        <item itemvalue="JUnit.FoodItemsFactoryTest.createInstance" />
-        <item itemvalue="Application.RunShop" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679582432106</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit">
+      <created>1679582717611</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679582717611</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -233,6 +245,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/GenerateIdNumberTest.java</url>
           <line>17</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/PriceGoodsCalculationsTest.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

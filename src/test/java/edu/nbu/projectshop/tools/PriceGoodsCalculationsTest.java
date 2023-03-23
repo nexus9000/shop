@@ -1,5 +1,6 @@
 package edu.nbu.projectshop.tools;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -14,7 +15,7 @@ class PriceGoodsCalculationsTest {
 private final String productionDate = "2023-02-02";
 private final double deliveryPrice = 10.01;
 private final double percentage = 20.05;
-private Date prDate;
+private Date prDate;//date of production
 private Date currentDate;
 private PriceGoodsCalculations pgc;
     @BeforeEach
@@ -37,5 +38,19 @@ private PriceGoodsCalculations pgc;
         boolean markNotExpired = pgc.checkExpirationDate(currentDate, prDate,100);
         assertFalse(markExpired);
         assertTrue(markNotExpired);
+    }
+    @Test
+    @DisplayName("Test price item with expired period")
+    void testPriceItem()throws RuntimeException{
+      RuntimeException thrown = Assertions.assertThrows(RuntimeException.class,()->
+                pgc.calculateRealPrice(currentDate, prDate,30)  );
+        assertEquals("Expired product",thrown.getMessage());
+    }
+    @Test
+    @DisplayName("Test price item with discount")
+    void testDiscountPrice()throws RuntimeException{
+        int period = 60;//product  in days
+        double priceDiscount = pgc.calculateRealPrice(currentDate, prDate, period);
+        System.out.println(priceDiscount);
     }
 }

@@ -36,16 +36,18 @@ public class PriceGoodsCalculations implements PriceCalculations {
     public String toString() {
         return "PriceGoodsCalculations{}";
     }
-    public double calculateRealPrice(Date currentDate,Date productionDate, int period)throws Exception{
+    public double calculateRealPrice(Date currentDate,Date productionDate, int period)throws RuntimeException{
         double price = 0.0;
         if(checkExpirationDate(currentDate,productionDate,period)){
-            price = priceCalculation(price, percentage);
+            price = priceCalculation(deliveryPrice, percentage);
             Calendar calendar = Calendar.getInstance();
             calendar.setTime(currentDate);
             calendar.add(Calendar.DATE, -3);
             Date mark = calendar.getTime();
             if(currentDate.compareTo(mark) == 0){
                 price *= 0.8;
+            }else{
+                return price;
             }
         }else{
             throw new RuntimeException("Expired product");
