@@ -1,5 +1,8 @@
-package edu.nbu.projectshop;
+package edu.nbu.projectshop.factories;
 
+import edu.nbu.projectshop.Items;
+import edu.nbu.projectshop.Meat;
+import edu.nbu.projectshop.Milk;
 import edu.nbu.projectshop.tools.GenerateIdNumber;
 
 import java.util.ArrayList;

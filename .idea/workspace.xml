@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="added test maximum markup percentage success test" />
+    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="added GoodsMissingException.java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/factories/NonFoodItemFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/stores/NonFoodStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/FoodItemsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/factories/FoodItemsFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/NonFoodItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/NonFoodItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/RunShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/RunShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/FoodItemsFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/FoodItemsFactoryTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,19 +68,16 @@
       <recent name="edu.nbu.projectshop" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PriceGoodsCalculationsTest.testMarkupTooBigException">
-    <configuration name="PriceGoodsCalculationsTest.checkExpirationDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.RunShop">
+    <configuration name="RunShop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.RunShop" />
       <module name="projectshop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.nbu.projectshop.tools.*" />
+          <option name="PATTERN" value="edu.nbu.projectshop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="edu.nbu.projectshop.tools" />
-      <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.tools.PriceGoodsCalculationsTest" />
-      <option name="METHOD_NAME" value="checkExpirationDate" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RunShop" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.testMarkupTooBigException" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.testDiscountPrice" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.testPriceItem" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.priceCalculation" />
-        <item itemvalue="JUnit.PriceGoodsCalculationsTest.checkExpirationDate" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679828679800</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added GoodsMissingException.java">
+      <created>1679829022959</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1679829022959</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,7 +287,8 @@
     <MESSAGE value="added testDiscountPrice" />
     <MESSAGE value="added test maximum markup percentage" />
     <MESSAGE value="added test maximum markup percentage success test" />
-    <option name="LAST_COMMIT_MESSAGE" value="added test maximum markup percentage success test" />
+    <MESSAGE value="added GoodsMissingException.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="added GoodsMissingException.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

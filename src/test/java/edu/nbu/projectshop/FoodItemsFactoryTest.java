@@ -1,5 +1,6 @@
 package edu.nbu.projectshop;
 
+import edu.nbu.projectshop.factories.FoodItemsFactory;
 import org.junit.jupiter.api.Assertions;
 
 import java.util.Arrays;
