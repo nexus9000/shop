@@ -1,5 +1,6 @@
 package edu.nbu.projectshop.tools;
 
+import edu.nbu.projectshop.exceptions.ExpiredProductException;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
@@ -34,16 +35,16 @@ public class PriceGoodsCalculations implements PriceCalculations {
         calendar.setTime(productionDate);
         calendar.add(Calendar.DATE, period);
         expDate = calendar.getTime();
-        boolean mark = expDate.before(currentDate) ? false : true;
-        return mark;
+        return expDate.before(currentDate) ? false : true;
+
     }
 
     @Override
     public String toString() {
         return "PriceGoodsCalculations{}";
     }
-    public BigDecimal calculateRealPrice(Date currentDate,Date productionDate, int period)throws RuntimeException{
-        BigDecimal price = BigDecimal.valueOf(0.0);
+    public BigDecimal calculateRealPrice(Date currentDate,Date productionDate, int period)throws ExpiredProductException{
+        BigDecimal price ;
         if(checkExpirationDate(currentDate,productionDate,period)){
             price = priceCalculation(deliveryPrice, percentage);
             Calendar calendar = Calendar.getInstance();
@@ -51,13 +52,13 @@ public class PriceGoodsCalculations implements PriceCalculations {
             calendar.add(Calendar.DATE, -3);
             Date mark = calendar.getTime();
             if(currentDate.compareTo(mark) == 0){
-               price.multiply(BigDecimal.valueOf(0.8));
+              return price.multiply(BigDecimal.valueOf(0.8));
             }else{
                 return price;
             }
         }else{
-            throw new RuntimeException("Expired product");
+            throw new ExpiredProductException("Expired product");
         }
-        return price;
+
     }
 }
