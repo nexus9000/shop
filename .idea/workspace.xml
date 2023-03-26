@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="added testDiscountPrice">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/PriceGoodsCalculationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/PriceGoodsCalculationsTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="added test maximum markup percentage success test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -239,7 +236,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679827265648</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added test maximum markup percentage">
+      <created>1679828509931</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679828509931</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added test maximum markup percentage success test">
+      <created>1679828679800</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679828679800</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,7 +272,9 @@
     <MESSAGE value="added ExpiredProductException.java" />
     <MESSAGE value="added TooBigMarkupException.java" />
     <MESSAGE value="added testDiscountPrice" />
-    <option name="LAST_COMMIT_MESSAGE" value="added testDiscountPrice" />
+    <MESSAGE value="added test maximum markup percentage" />
+    <MESSAGE value="added test maximum markup percentage success test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test maximum markup percentage success test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
