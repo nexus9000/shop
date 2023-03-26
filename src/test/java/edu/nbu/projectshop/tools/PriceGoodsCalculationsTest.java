@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PriceGoodsCalculationsTest {
 private final String productionDate = "2023-02-02";
 private final BigDecimal deliveryPrice = BigDecimal.valueOf(10.00);
-private final BigDecimal percentage = BigDecimal.valueOf(1.0);
+private final BigDecimal percentage = BigDecimal.valueOf(0.2);
 private Date prDate;//date of production
 private Date currentDate;
 private PriceGoodsCalculations pgc;

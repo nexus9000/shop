@@ -1,5 +1,7 @@
 package edu.nbu.projectshop.tools;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.Date;
@@ -19,8 +21,9 @@ public class PriceGoodsCalculations implements PriceCalculations {
     }
 
     @Override
-    public BigDecimal priceCalculation(BigDecimal percentage, BigDecimal deliveryPrice) {
-        return percentage.multiply(deliveryPrice);
+    public BigDecimal priceCalculation(@NotNull BigDecimal percentage, BigDecimal deliveryPrice) {
+
+        return (percentage.multiply(deliveryPrice)).add(deliveryPrice);
     }
 
 
