@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="changed double to BigDecimal">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/exceptions/ExpiredProductException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/PriceGoodsCalculations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/PriceGoodsCalculations.java" afterDir="false" />
+    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="added ExpiredProductException.java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/exceptions/TooBigMarkupException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679825822839</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added ExpiredProductException.java">
+      <created>1679826643460</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679826643460</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +243,8 @@
     <MESSAGE value="commit" />
     <MESSAGE value="price calculation" />
     <MESSAGE value="changed double to BigDecimal" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed double to BigDecimal" />
+    <MESSAGE value="added ExpiredProductException.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ExpiredProductException.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
