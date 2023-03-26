@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PriceGoodsCalculationsTest {
     private final String productionDate = "2023-02-02";
     private final BigDecimal deliveryPrice = BigDecimal.valueOf(10.00);//real price
-    private final BigDecimal percentage = BigDecimal.valueOf(0.2);//markup 20%
+    private  BigDecimal percentage;//markup 20%
     private final BigDecimal MAXIMUM_MARKUP_PERCENTAGE = BigDecimal.valueOf(0.5);//maximum markup percentage
     private Date prDate;//date of production
     private Date currentDate;
@@ -28,6 +28,7 @@ class PriceGoodsCalculationsTest {
         prDate = sdf.parse(productionDate);
         currentDate = (new Date());
         pgc = new PriceGoodsCalculations(deliveryPrice, percentage, prDate);
+        percentage = BigDecimal.valueOf(0.2);
     }
 
     @Test
@@ -47,6 +48,7 @@ class PriceGoodsCalculationsTest {
     @Test
     @DisplayName("test maximum markup percentage")
     void testMarkupTooBigException() {
+        percentage = BigDecimal.valueOf(0.55);//55% markup percentage should be thrown exception
         TooBigMarkupException exception = Assertions.assertThrows(TooBigMarkupException.class, () -> {
             if (percentage.compareTo(MAXIMUM_MARKUP_PERCENTAGE) > 0)
                 throw new TooBigMarkupException("Too big markup. " + "Should less than 50 percent");

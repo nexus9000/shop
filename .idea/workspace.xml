@@ -62,23 +62,7 @@
       <recent name="edu.nbu.projectshop" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PriceGoodsCalculationsTest.testDiscountPrice">
-    <configuration name="GenerateIdNumberTest.testId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="projectshop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.nbu.projectshop.tools.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.nbu.projectshop.tools" />
-      <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.tools.GenerateIdNumberTest" />
-      <option name="METHOD_NAME" value="testId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PriceGoodsCalculationsTest.testMarkupTooBigException">
     <configuration name="PriceGoodsCalculationsTest.checkExpirationDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="projectshop" />
       <extension name="coverage">
@@ -127,6 +111,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PriceGoodsCalculationsTest.testMarkupTooBigException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="projectshop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nbu.projectshop.tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nbu.projectshop.tools" />
+      <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.tools.PriceGoodsCalculationsTest" />
+      <option name="METHOD_NAME" value="testMarkupTooBigException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PriceGoodsCalculationsTest.testPriceItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="projectshop" />
       <extension name="coverage">
@@ -145,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PriceGoodsCalculationsTest.testMarkupTooBigException" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.testDiscountPrice" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.testPriceItem" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.priceCalculation" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.checkExpirationDate" />
-        <item itemvalue="JUnit.GenerateIdNumberTest.testId" />
       </list>
     </recent_temporary>
   </component>
