@@ -46,7 +46,7 @@ public class PriceGoodsCalculations implements PriceCalculations {
     public BigDecimal calculateRealPrice(Date currentDate,Date productionDate, int period)throws ExpiredProductException{
         BigDecimal price ;
         if(checkExpirationDate(currentDate,productionDate,period)){
-            price = priceCalculation(deliveryPrice, percentage);
+            price = priceCalculation(percentage, deliveryPrice);
             Calendar calendar = Calendar.getInstance();
             calendar.setTime(currentDate);
             calendar.add(Calendar.DATE, -3);

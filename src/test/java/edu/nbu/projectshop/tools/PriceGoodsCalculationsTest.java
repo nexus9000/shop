@@ -14,8 +14,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PriceGoodsCalculationsTest {
 private final String productionDate = "2023-02-02";
-private final BigDecimal deliveryPrice = BigDecimal.valueOf(10.00);
-private final BigDecimal percentage = BigDecimal.valueOf(0.2);
+private final BigDecimal deliveryPrice = BigDecimal.valueOf(10.00);//real price
+private final BigDecimal percentage = BigDecimal.valueOf(0.2);//markup 20%
 private Date prDate;//date of production
 private Date currentDate;
 private PriceGoodsCalculations pgc;
@@ -52,6 +52,7 @@ private PriceGoodsCalculations pgc;
     void testDiscountPrice()throws RuntimeException{
         int period = 60;//product  in days
         BigDecimal priceDiscount = pgc.calculateRealPrice(currentDate, prDate, period);
-        System.out.println(priceDiscount);
+        //initial price is 10 markup percentage is 20 % so expected price is 12.00
+        assertEquals(12.00, priceDiscount);
     }
 }
