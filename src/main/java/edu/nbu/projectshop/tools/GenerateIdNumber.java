@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class GenerateIdNumber {
-    public final static ArrayList<Integer> generatedId = new ArrayList<>();
+    public  final static ArrayList<Integer> generatedId = new ArrayList<>();
     public static @NotNull Integer generateId(){
         Random random = new Random();
         Integer genId = random.nextInt(1_000_000);

@@ -1,13 +1,14 @@
-package edu.nbu.projectshop;
+package edu.nbu.projectshop.goods;
+
+import edu.nbu.projectshop.goods.Items;
 
 import java.util.Date;
 
-public  class NonFoodItems implements Items{
-    private final String typeItems = "Goods";
+public   class FoodItems implements Items {
+    public final String typeItems = "Foods";
     private final String itemName;
-
-    public String getItemName() {
-        return itemName;
+    public FoodItems(String itemName){
+        this.itemName = itemName;
     }
 
     @Override
@@ -31,11 +32,7 @@ public  class NonFoodItems implements Items{
     }
 
     @Override
-    public Double calculateProfitMargin(String typeItems){
+    public  Double calculateProfitMargin(String typeItems){
         return 0.0;
     }
-    public NonFoodItems(String itemName){
-        this.itemName = itemName;
-    }
-
 }

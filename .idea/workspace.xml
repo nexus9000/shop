@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="added GoodsMissingException.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/factories/NonFoodItemFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/stores/NonFoodStore.java" afterDir="false" />
+    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="Cashier added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/employee/Cashier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/employee/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/FoodItemsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/factories/FoodItemsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/NonFoodItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/NonFoodItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/FoodItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/FoodItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/Meat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/Milk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/NonFoodItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/NonFoodItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/RunShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/RunShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/factories/FoodItemsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/factories/FoodItemsFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/factories/NonFoodItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/factories/NonFoodItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/stores/NonFoodStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/stores/NonFoodStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/GenerateIdNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/GenerateIdNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/FoodItemsFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/FoodItemsFactoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -63,6 +71,9 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\projectshop\src\main\resources" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="edu.nbu.projectshop.tools" />
       <recent name="edu.nbu.projectshop" />
@@ -74,7 +85,7 @@
       <module name="projectshop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.nbu.projectshop.*" />
+          <option name="PATTERN" value="edu.nbu.projectshop.goods.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -263,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679829022959</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="NonFoodStore.java">
+      <created>1679830667599</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1679830667599</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,26 +306,13 @@
     <MESSAGE value="added test maximum markup percentage" />
     <MESSAGE value="added test maximum markup percentage success test" />
     <MESSAGE value="added GoodsMissingException.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="added GoodsMissingException.java" />
+    <MESSAGE value="NonFoodStore.java" />
+    <MESSAGE value="Cashier added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cashier added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/GenerateIdNumber.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/GenerateIdNumber.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/GenerateIdNumber.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/GenerateIdNumberTest.java</url>
           <line>16</line>

@@ -1,4 +1,4 @@
-package edu.nbu.projectshop;
+package edu.nbu.projectshop.goods;
 
 import java.util.Date;
 

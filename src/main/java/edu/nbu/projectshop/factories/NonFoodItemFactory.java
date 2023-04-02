@@ -1,6 +1,6 @@
 package edu.nbu.projectshop.factories;
 
-import edu.nbu.projectshop.NonFoodItems;
+import edu.nbu.projectshop.goods.NonFoodItems;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
