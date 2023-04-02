@@ -12,6 +12,11 @@ public   class FoodItems implements Items {
     }
 
     @Override
+    public String getItemName() {
+        return itemName;
+    }
+
+    @Override
     public Integer getIndentificationNumber() {
         return null;
     }
@@ -28,7 +33,7 @@ public   class FoodItems implements Items {
 
     @Override
     public String getCategory() {
-        return null;
+        return typeItems;
     }
 
     @Override

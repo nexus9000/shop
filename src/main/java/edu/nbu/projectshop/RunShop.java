@@ -12,7 +12,7 @@ import org.apache.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
-
+import java.util.Map;
 
 
 public class RunShop {
@@ -30,13 +30,23 @@ public class RunShop {
         NonFoodStore nonFoodStore = new NonFoodStore(storeMap);
         nonFoodStore.addItem(nails.getIdNum(), nails);
         nonFoodStore.listItem();
+        Cashier cashier = new Cashier(101, "John", "Smith", 1000.00);
+        Cashier cashier2 = new Cashier(102, "Pit", "Smith", 1000.00);
+        HashMap<Integer, Cashier> listCashier = new HashMap<>();
+        listCashier.put(cashier.getId(), cashier);
+        listCashier.put(cashier2.getId(), cashier2);
+        HashMap<Integer, Cashier> casse = initCasse(listCashier);
+        casse.forEach((k,v)-> System.out.println(k + " "+v));
     }
 
     private static @NotNull HashMap<Integer, Cashier> initCasse(@NotNull HashMap<Integer, Cashier> cashiers){
         HashMap<Integer, Cashier> casse = new HashMap<>();
-        cashiers.forEach((k,v)-> {
+        Integer numCasse = 1;
+        for(Map.Entry<Integer,Cashier> key   : cashiers.entrySet()){
+            casse.put(numCasse,(Cashier) key.getValue());
+            numCasse ++;
+        }
 
-        });
         return casse;
     }
 }

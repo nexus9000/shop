@@ -5,22 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="Cashier added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/employee/Cashier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/employee/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/operations/SaleOps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/Receipt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/FoodItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/FoodItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/Items.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/Meat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/Milk.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/NonFoodItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/NonFoodItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/RunShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/RunShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/factories/FoodItemsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/factories/FoodItemsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/factories/NonFoodItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/factories/NonFoodItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/FoodItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/FoodItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/Items.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/stores/NonFoodStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/stores/NonFoodStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/GenerateIdNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/GenerateIdNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/FoodItemsFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/FoodItemsFactoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +26,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -281,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679830667599</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Cashier added">
+      <created>1680420622709</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1680420622709</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

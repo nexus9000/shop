@@ -7,6 +7,7 @@ public interface Items {
     public Double getPrice (Double price);
     public Date getExpirationDate(Date expireDate);
     public String getCategory();
+    public String getItemName();
     public Double calculateProfitMargin(String typeCategory);
 
 
