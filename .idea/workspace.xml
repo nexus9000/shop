@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="Cashier added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/operations/SaleOps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/Receipt.java" afterDir="false" />
+    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="SaleOps.java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/stores/FoodStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/RunShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/RunShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/FoodItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/FoodItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/operations/SaleOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/operations/SaleOps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/stores/NonFoodStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/stores/NonFoodStore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -280,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680420622709</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="SaleOps.java">
+      <created>1680425373016</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1680425373016</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,7 +312,8 @@
     <MESSAGE value="added GoodsMissingException.java" />
     <MESSAGE value="NonFoodStore.java" />
     <MESSAGE value="Cashier added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cashier added" />
+    <MESSAGE value="SaleOps.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="SaleOps.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

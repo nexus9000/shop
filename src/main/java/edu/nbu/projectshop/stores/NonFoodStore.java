@@ -16,7 +16,7 @@ public class NonFoodStore {
     public void addItem( Integer idNum,NonFoodItems item){
         storageMap.put(idNum, item);
     }
-    public void decreaseQuantity(long numberToBuy, NonFoodItems item){
+    public void decreaseQuantity(long numberToBuy, @NotNull NonFoodItems item){
         long currentQuantity = item.getQuantity();
         long realQuantity = currentQuantity - numberToBuy;
         item.setQuantity(realQuantity);

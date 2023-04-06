@@ -23,21 +23,25 @@ public class SaleOps {
 
     public Receipt generateReceipt(Long seqNumber) {
         Date timeStamp = new Date();
+
         listPurchased.forEach(p -> {
+                    Receipt receipt;
                     switch (p.getCategory()) {
                         case "Foods": {
 
                         }
                         case "Goods":
-                        String itemName = p.getItemName();
-                        if(nonFoodStore.checkItemAvailability((NonFoodItems) p, 10)){
-                            //reduce quantity
-
-                            //generate receipt
-                        }
+                            String itemName = p.getItemName();
+                            if (nonFoodStore.checkItemAvailability((NonFoodItems) p, 10)) {
+                                //reduce quantity
+                                nonFoodStore.decreaseQuantity(10, (NonFoodItems) p);
+                                //generate receipt
+                                receipt = new Receipt(seqNumber, cashier, timeStamp, );
+                                return receipt;
+                            }
                     }
                 }
         );
-        return new Receipt(seqNumber, cashier, timeStamp, );
+
     }
 }
