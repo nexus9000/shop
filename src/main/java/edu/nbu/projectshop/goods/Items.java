@@ -1,14 +1,15 @@
 package edu.nbu.projectshop.goods;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public interface Items {
-    public Integer getIndentificationNumber();
-    public Double getPrice (Double price);
-    public Date getExpirationDate(Date expireDate);
-    public String getCategory();
-    public String getItemName();
-    public Double calculateProfitMargin(String typeCategory);
+    Integer getIndentificationNumber();
+    BigDecimal getPrice ();
+    Date getExpirationDate(Date expireDate);
+    String getCategory();
+    String getItemName();
+     Double calculateProfitMargin(String typeCategory);
 
 
 }

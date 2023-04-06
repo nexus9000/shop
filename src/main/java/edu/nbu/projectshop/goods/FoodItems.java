@@ -2,6 +2,7 @@ package edu.nbu.projectshop.goods;
 
 import edu.nbu.projectshop.goods.Items;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public   class FoodItems implements Items {
@@ -22,7 +23,7 @@ public   class FoodItems implements Items {
     }
 
     @Override
-    public Double getPrice(Double price) {
+    public BigDecimal getPrice() {
         return null;
     }
 

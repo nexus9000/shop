@@ -2,13 +2,14 @@ package edu.nbu.projectshop.goods;
 
 import edu.nbu.projectshop.goods.Items;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public  class NonFoodItems implements Items {
     private final String typeItems = "Goods";
     private final String itemName;
     private Integer idNum;
-
+    private BigDecimal price;
     public Integer getIdNum() {
         return idNum;
     }
@@ -36,8 +37,8 @@ public  class NonFoodItems implements Items {
     }
 
     @Override
-    public Double getPrice(Double price) {
-        return null;
+    public BigDecimal getPrice() {
+        return this.price;
     }
 
     @Override

@@ -38,12 +38,20 @@ class SaleOpsTest {
         nonFoodStore = new NonFoodStore(storeMap);
         nonFoodStore.addItem(nails.getIdNum(),nails);
         nonFoodStore.addItem(socks.getIdNum(), socks);
-        saleOps = new SaleOps();
+        HashMap<BigDecimal, Integer> purchasedQ1 = new HashMap<>();
+        purchasedQ1.put(nails.getPrice(),10);
+        listPurchased.put(nails,purchasedQ1);
+        HashMap<BigDecimal, Integer> purchasedQ2 = new HashMap<>();
+        purchasedQ2.put(socks.getPrice(),10);
+        listPurchased.put(socks,purchasedQ2);
+        saleOps = new SaleOps(cashier,listPurchased,nonFoodStore);
 
     }
 
+
     @Test
-    void testRecipt()throws Exception{
-        AtomicReference<Receipt> receipt = saleOps.generateReceipt();
+    void testReceipt()throws Exception{
+        AtomicReference<Receipt> receipt = saleOps.generateReceipt(GenerateIdNumber.generateLongId());
+        assertNotNull(receipt);
     }
 }
