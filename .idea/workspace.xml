@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="SaleOps.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/GenerateSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/GenerateSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/GenerateSequence.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681027620191</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="SaleOps.java">
+      <created>1681028538105</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1681028538105</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
