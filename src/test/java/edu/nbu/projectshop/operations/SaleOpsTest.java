@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicReference;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -29,10 +30,10 @@ class SaleOpsTest {
         cashier = new Cashier(101, "John", "Smith", 1000.00);
         listPurchased = new HashMap<>();
         nails = NonFoodItemFactory.createInstance("nails");
-        nails.setQuantity(100);
+        Objects.requireNonNull(nails).setQuantity(100);
         nails.setIdNum(GenerateIdNumber.generateId());
         socks = NonFoodItemFactory.createInstance("socks");
-        socks.setQuantity(1000);
+        Objects.requireNonNull(socks).setQuantity(1000);
         socks.setIdNum(GenerateIdNumber.generateId());
         HashMap <Integer, NonFoodItems> storeMap = new HashMap<>();
         nonFoodStore = new NonFoodStore(storeMap);
@@ -50,8 +51,9 @@ class SaleOpsTest {
 
 
     @Test
-    void testReceipt()throws Exception{
+    void testReceipt(){
         AtomicReference<Receipt> receipt = saleOps.generateReceipt(GenerateIdNumber.generateLongId());
         assertNotNull(receipt);
+        System.out.println(receipt);
     }
 }

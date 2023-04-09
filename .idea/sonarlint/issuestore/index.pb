@@ -30,3 +30,19 @@ g
 7src/main/java/edu/nbu/projectshop/employee/Cashier.java,f\0\f0a5ff63b95f7964217640e7593f391491956e22
 ;
 log/log.out,4\5\4502d8d21ad8f630c6d40a4fc9e5f9852a9a933b
+d
+4src/main/java/edu/nbu/projectshop/tools/Receipt.java,b\c\bc6f285b0ff7ea2a28181afe73ba8d7acf720017
+^
+.src/main/java/edu/nbu/projectshop/RunShop.java,6\b\6b3ba6b26a70fcffc482d38459a6d3515523f30f
+j
+:src/main/java/edu/nbu/projectshop/stores/NonFoodStore.java,2\6\2605ffe6b2edb13f53e6b2625ad638af6689b157
+w
+Gsrc/main/java/edu/nbu/projectshop/exceptions/GoodsMissingException.java,d\b\db4312cc81fa019b2281849487e65baaaa220a98
+g
+7src/main/java/edu/nbu/projectshop/stores/FoodStore.java,4\1\41604aad651272070aeb2b15b434f47f69e7d11a
+s
+Csrc/main/java/edu/nbu/projectshop/tools/PriceGoodsCalculations.java,c\d\cd562952e863995fd829eea523da9fa0748391a9
+m
+=src/main/java/edu/nbu/projectshop/tools/GenerateIdNumber.java,8\1\81afae0a051ceb7789ceaccf018e1d03a58348f3
+b
+2src/main/java/edu/nbu/projectshop/goods/Items.java,a\b\abc0eba7a7c96dcb96c5dc91ebc95cd475214686

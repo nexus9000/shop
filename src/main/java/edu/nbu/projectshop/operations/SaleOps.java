@@ -61,4 +61,14 @@ public class SaleOps {
         );
        return receipt;
     }
+
+    @Override
+    public String toString() {
+        return "SaleOps{" +
+                "cashier=" + cashier +
+                ", listPurchased=" + listPurchased +
+                ", nonFoodStore=" + nonFoodStore +
+                ", foodStore=" + foodStore +
+                '}';
+    }
 }
