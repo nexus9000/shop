@@ -14,10 +14,12 @@ public class GenerateSequence {
         long seqN;
         try (FileInputStream fis = new FileInputStream(propsName)) {
             props.load(fis);
-            seqN = Long.parseLong(props.getProperty("sequence"));
-            props.setProperty("sequence", String.valueOf(seqN++));
+            seqN = Long.parseLong(props.getProperty("sequence").trim());
+
         }
         try (FileOutputStream fos = new FileOutputStream(propsName)) {
+            long seq = seqN;
+            props.setProperty("sequence", String.valueOf(++seq));
             props.store(fos, "Updated sequence");
         }
         return Optional.ofNullable(Optional.of(seqN)

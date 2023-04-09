@@ -8,6 +8,7 @@ import edu.nbu.projectshop.stores.NonFoodStore;
 import edu.nbu.projectshop.tools.GenerateIdNumber;
 import edu.nbu.projectshop.tools.GenerateSequence;
 import edu.nbu.projectshop.tools.Receipt;
+import org.apache.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -20,6 +21,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import static org.junit.jupiter.api.Assertions.*;
 @DisplayName("Test sale ops")
 class SaleOpsTest {
+    private final static Logger logger = Logger.getLogger(SaleOpsTest.class);
     private  Cashier cashier;
     private SaleOps saleOps;
     private  HashMap<Items, HashMap<BigDecimal, Integer>> listPurchased;
@@ -53,8 +55,9 @@ class SaleOpsTest {
 
     @Test
     void testReceipt()throws Exception{
-        AtomicReference<Receipt> receipt = saleOps.generateReceipt(GenerateSequence.generateSeq("shop.properties"));
+        AtomicReference<Receipt> receipt = saleOps.generateReceipt(
+                GenerateSequence.generateSeq("shop.properties"));
         assertNotNull(receipt);
-        System.out.println(receipt);
+        logger.info(receipt);
     }
 }

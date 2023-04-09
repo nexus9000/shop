@@ -30,8 +30,6 @@ g
 7src/main/java/edu/nbu/projectshop/employee/Cashier.java,f\0\f0a5ff63b95f7964217640e7593f391491956e22
 ;
 log/log.out,4\5\4502d8d21ad8f630c6d40a4fc9e5f9852a9a933b
-d
-4src/main/java/edu/nbu/projectshop/tools/Receipt.java,b\c\bc6f285b0ff7ea2a28181afe73ba8d7acf720017
 ^
 .src/main/java/edu/nbu/projectshop/RunShop.java,6\b\6b3ba6b26a70fcffc482d38459a6d3515523f30f
 j
