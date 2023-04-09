@@ -9,12 +9,12 @@ import java.util.Properties;
 public class GenerateSequence {
     private GenerateSequence() {}
 
-    public static Optional<Integer> generateSeq(String propsName) throws IOException {
+    public static Optional<Long> generateSeq(String propsName) throws IOException {
         Properties props = new Properties();
-        int seqN;
+        long seqN;
         try (FileInputStream fis = new FileInputStream(propsName)) {
             props.load(fis);
-            seqN = Integer.parseInt(props.getProperty("sequence"));
+            seqN = Long.parseLong(props.getProperty("sequence"));
             props.setProperty("sequence", String.valueOf(seqN++));
         }
         try (FileOutputStream fos = new FileOutputStream(propsName)) {

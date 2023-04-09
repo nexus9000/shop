@@ -7,8 +7,9 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Objects;
+import java.util.Optional;
 
-public record Receipt(Long seqNumber, Cashier cashier, Date date, HashMap<Items, HashMap<BigDecimal, Integer>> listItems,
+public record Receipt(Optional<Long> seqNumber, Cashier cashier, Date date, HashMap<Items, HashMap<BigDecimal, Integer>> listItems,
                       BigDecimal price) {
     public Receipt {
         Objects.requireNonNull(seqNumber);

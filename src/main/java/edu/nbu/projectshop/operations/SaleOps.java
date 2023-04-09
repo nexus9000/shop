@@ -12,6 +12,7 @@ import org.jetbrains.annotations.NotNull;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Optional;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class SaleOps {
@@ -36,7 +37,7 @@ public class SaleOps {
         return finalPrice;
     }
 
-    public AtomicReference<Receipt>generateReceipt(Long seqNumber) {
+    public AtomicReference<Receipt>generateReceipt(Optional<Long> seqNumber) {
         Date timeStamp = new Date();
         BigDecimal finalPrice = calculateFinalPrice(listPurchased);
         AtomicReference<Receipt> receipt = new AtomicReference<>();

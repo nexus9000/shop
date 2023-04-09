@@ -6,6 +6,7 @@ import edu.nbu.projectshop.goods.Items;
 import edu.nbu.projectshop.goods.NonFoodItems;
 import edu.nbu.projectshop.stores.NonFoodStore;
 import edu.nbu.projectshop.tools.GenerateIdNumber;
+import edu.nbu.projectshop.tools.GenerateSequence;
 import edu.nbu.projectshop.tools.Receipt;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -51,8 +52,8 @@ class SaleOpsTest {
 
 
     @Test
-    void testReceipt(){
-        AtomicReference<Receipt> receipt = saleOps.generateReceipt(GenerateIdNumber.generateLongId());
+    void testReceipt()throws Exception{
+        AtomicReference<Receipt> receipt = saleOps.generateReceipt(GenerateSequence.generateSeq("shop.properties"));
         assertNotNull(receipt);
         System.out.println(receipt);
     }
