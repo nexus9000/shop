@@ -14,6 +14,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.HashMap;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicReference;
@@ -33,10 +34,12 @@ class SaleOpsTest {
         cashier = new Cashier(101, "John", "Smith", 1000.00);
         listPurchased = new HashMap<>();
         nails = NonFoodItemFactory.createInstance("nails");
+        Objects.requireNonNull(nails).setPrice(new BigDecimal(10.00));
         Objects.requireNonNull(nails).setQuantity(100);
         nails.setIdNum(GenerateIdNumber.generateId());
         socks = NonFoodItemFactory.createInstance("socks");
         Objects.requireNonNull(socks).setQuantity(1000);
+        Objects.requireNonNull(socks).setPrice(new BigDecimal( 2.05).setScale(3, RoundingMode.CEILING));
         socks.setIdNum(GenerateIdNumber.generateId());
         HashMap <Integer, NonFoodItems> storeMap = new HashMap<>();
         nonFoodStore = new NonFoodStore(storeMap);

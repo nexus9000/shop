@@ -24,8 +24,6 @@ q
 Asrc/main/java/edu/nbu/projectshop/factories/FoodItemsFactory.java,f\f\fffbfaaf1b0b6d846f8b28d6b703843ba40c0f91
 k
 ;src/test/java/edu/nbu/projectshop/FoodItemsFactoryTest.java,f\8\f87f21e0aff6249a1c6271510d4172ee0ce6c73f
-s
-Csrc/main/java/edu/nbu/projectshop/factories/NonFoodItemFactory.java,0\f\0f622fbee112d4d4b5eb8aa0a9a4c87722ded443
 g
 7src/main/java/edu/nbu/projectshop/employee/Cashier.java,f\0\f0a5ff63b95f7964217640e7593f391491956e22
 ;

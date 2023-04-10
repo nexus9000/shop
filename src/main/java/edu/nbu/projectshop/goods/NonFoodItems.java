@@ -10,6 +10,11 @@ public  class NonFoodItems implements Items {
     private final String itemName;
     private Integer idNum;
     private BigDecimal price;
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+
     public Integer getIdNum() {
         return idNum;
     }
