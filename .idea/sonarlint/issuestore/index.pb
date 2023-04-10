@@ -6,8 +6,6 @@ L
 .idea/codeStyles/Project.xml,6\e\6ecd6000a7b6f4a2884412ff19f74193ed089648
 T
 $.idea/codeStyles/codeStyleConfig.xml,d\d\dd7b3350c29c49497756c7f32c69a3bed18b1cba
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 n
 >src/main/java/edu/nbu/projectshop/tools/PriceCalculations.java,0\b\0bb1550afd76c4e8b25139def7acc47cce931a04
 r
@@ -42,3 +40,9 @@ m
 =src/main/java/edu/nbu/projectshop/tools/GenerateIdNumber.java,8\1\81afae0a051ceb7789ceaccf018e1d03a58348f3
 b
 2src/main/java/edu/nbu/projectshop/goods/Items.java,a\b\abc0eba7a7c96dcb96c5dc91ebc95cd475214686
+f
+6src/main/java/edu/nbu/projectshop/goods/FoodItems.java,1\7\17f4da4a8dde5647a7ef2571ddbfd26143c86855
+w
+Gsrc/test/java/edu/nbu/projectshop/tools/PriceGoodsCalculationsTest.java,3\e\3e976415ec828f4a26261c0bf10a7913e1890791
+d
+4src/main/java/edu/nbu/projectshop/tools/Receipt.java,b\c\bc6f285b0ff7ea2a28181afe73ba8d7acf720017

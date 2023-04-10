@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URL;
 import java.util.Optional;
 import java.util.Properties;
 
@@ -13,12 +14,14 @@ public class GenerateSequence {
     public static Optional<Long> generateSeq(String propsName) throws IOException {
         Properties props = new Properties();
         long seqN;
-        try (FileInputStream fis = new FileInputStream(propsName)) {
+        try (InputStream fis = Thread.currentThread().getContextClassLoader().getResourceAsStream(propsName) ){
             props.load(fis);
             seqN = Long.parseLong(props.getProperty("sequence").trim());
 
         }
-        try (FileOutputStream fos = new FileOutputStream(propsName)) {
+        try (FileOutputStream fos = new FileOutputStream
+                (Thread.currentThread().getContextClassLoader()
+                        .getResource(propsName).getPath())) {
             long seq = seqN;
             props.setProperty("sequence", String.valueOf(++seq));
             props.store(fos, "Updated sequence");
@@ -26,4 +29,5 @@ public class GenerateSequence {
         return Optional.ofNullable(Optional.of(seqN)
                 .orElseThrow(() -> new RuntimeException("Problem with sequence")));
     }
+
 }

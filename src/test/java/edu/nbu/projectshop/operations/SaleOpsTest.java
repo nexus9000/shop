@@ -60,6 +60,7 @@ class SaleOpsTest {
     void testReceipt()throws Exception{
         AtomicReference<Receipt> receipt = saleOps.generateReceipt(
                 GenerateSequence.generateSeq("shop.properties"));
+
         assertNotNull(receipt);
         logger.info(receipt);
     }
