@@ -25,8 +25,24 @@
             <version>20.1.0</version>
             <scope>compile</scope>
         </dependency>
-    </dependencies>
+        <!-- https://mvnrepository.com/artifact/org.hyperledger.fabric-sdk-java/fabric-sdk-java -->
+        <dependency>
+            <groupId>org.hyperledger.fabric-sdk-java</groupId>
+            <artifactId>fabric-sdk-java</artifactId>
+            <version>2.2.21</version>
+            <scope>test</scope>
+        </dependency>
 
+
+    </dependencies>
+    <repositories>
+        <repository>
+            <id>maven_repository</id>
+            <name>maven_repo</name>
+            <url>https://mvnrepository.com/artifact/org.hyperledger.fabric-sdk-java/fabric-sdk-java</url>
+        </repository>
+
+    </repositories>
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>

@@ -20,8 +20,6 @@ h
 8src/main/java/edu/nbu/projectshop/employee/Employee.java,5\0\508a2344fbf7b3b108ce3ff6b04bf8eb1b99cab8
 q
 Asrc/main/java/edu/nbu/projectshop/factories/FoodItemsFactory.java,f\f\fffbfaaf1b0b6d846f8b28d6b703843ba40c0f91
-k
-;src/test/java/edu/nbu/projectshop/FoodItemsFactoryTest.java,f\8\f87f21e0aff6249a1c6271510d4172ee0ce6c73f
 g
 7src/main/java/edu/nbu/projectshop/employee/Cashier.java,f\0\f0a5ff63b95f7964217640e7593f391491956e22
 ;
@@ -42,7 +40,5 @@ b
 2src/main/java/edu/nbu/projectshop/goods/Items.java,a\b\abc0eba7a7c96dcb96c5dc91ebc95cd475214686
 f
 6src/main/java/edu/nbu/projectshop/goods/FoodItems.java,1\7\17f4da4a8dde5647a7ef2571ddbfd26143c86855
-w
-Gsrc/test/java/edu/nbu/projectshop/tools/PriceGoodsCalculationsTest.java,3\e\3e976415ec828f4a26261c0bf10a7913e1890791
 d
 4src/main/java/edu/nbu/projectshop/tools/Receipt.java,b\c\bc6f285b0ff7ea2a28181afe73ba8d7acf720017
