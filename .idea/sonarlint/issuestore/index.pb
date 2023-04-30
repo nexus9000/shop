@@ -32,8 +32,6 @@ w
 Gsrc/main/java/edu/nbu/projectshop/exceptions/GoodsMissingException.java,d\b\db4312cc81fa019b2281849487e65baaaa220a98
 g
 7src/main/java/edu/nbu/projectshop/stores/FoodStore.java,4\1\41604aad651272070aeb2b15b434f47f69e7d11a
-s
-Csrc/main/java/edu/nbu/projectshop/tools/PriceGoodsCalculations.java,c\d\cd562952e863995fd829eea523da9fa0748391a9
 m
 =src/main/java/edu/nbu/projectshop/tools/GenerateIdNumber.java,8\1\81afae0a051ceb7789ceaccf018e1d03a58348f3
 b

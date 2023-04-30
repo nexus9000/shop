@@ -1,12 +1,14 @@
 package edu.nbu.projectshop.tools;
 
 import edu.nbu.projectshop.exceptions.TooBigMarkupException;
+import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -21,14 +23,14 @@ class PriceGoodsCalculationsTest {
     private Date prDate;//date of production
     private Date currentDate;
     private PriceGoodsCalculations pgc;
-
+    private Logger logger = Logger.getLogger(PriceGoodsCalculationsTest.class);
     @BeforeEach
     void setUp() throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         prDate = sdf.parse(productionDate);
         currentDate = (new Date());
+        percentage = BigDecimal.valueOf(0.30).setScale(2);
         pgc = new PriceGoodsCalculations(deliveryPrice, percentage, prDate);
-        percentage = BigDecimal.valueOf(0.2);
     }
 
     @Test
@@ -66,9 +68,10 @@ class PriceGoodsCalculationsTest {
     @Test
     @DisplayName("Test price item with discount")
     void testDiscountPrice() throws RuntimeException {
-        int period = 60;//product  in days
+        int period = 120;//product  in days
         BigDecimal priceDiscount = pgc.calculateRealPrice(currentDate, prDate, period);
-        //initial price is 10 markup percentage is 20 % so expected price is 12.00
-        assertEquals(BigDecimal.valueOf(12.00), priceDiscount);
+        //initial price is 10 units markup percentage is 30 % so expected price is 13.00
+        assertEquals(BigDecimal.valueOf(13.0040).setScale(2, RoundingMode.HALF_UP), priceDiscount.setScale(2,RoundingMode.HALF_UP));
+        logger.info(priceDiscount.setScale(2));
     }
 }

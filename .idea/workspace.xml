@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="props file fixxed">
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/ledger/ApiLedgerTest.java" afterDir="false" />
+    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="ledger added">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/operations/SaleOpsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/operations/SaleOpsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/PriceGoodsCalculationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/PriceGoodsCalculationsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +73,8 @@
       <recent name="edu.nbu.projectshop" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SaleOpsTest.testReceipt">
-    <configuration name="GenerateSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.tools.GenerateSequence" />
+  <component name="RunManager" selected="JUnit.PriceGoodsCalculationsTest.testDiscountPrice">
+    <configuration name="PriceGoodsCalculationsTest.checkExpirationDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="projectshop" />
       <extension name="coverage">
         <pattern>
@@ -85,19 +82,10 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RunShop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.RunShop" />
-      <module name="projectshop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.nbu.projectshop.goods.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="edu.nbu.projectshop.tools" />
+      <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.tools.PriceGoodsCalculationsTest" />
+      <option name="METHOD_NAME" value="checkExpirationDate" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,6 +122,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PriceGoodsCalculationsTest.testPriceItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="projectshop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nbu.projectshop.tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nbu.projectshop.tools" />
+      <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.tools.PriceGoodsCalculationsTest" />
+      <option name="METHOD_NAME" value="testPriceItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SaleOpsTest.testReceipt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="projectshop" />
       <extension name="coverage">
@@ -152,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SaleOpsTest.testReceipt" />
-        <item itemvalue="Application.GenerateSequence" />
-        <item itemvalue="Application.RunShop" />
-        <item itemvalue="JUnit.PriceGoodsCalculationsTest.testMarkupTooBigException" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.testDiscountPrice" />
+        <item itemvalue="JUnit.PriceGoodsCalculationsTest.testPriceItem" />
+        <item itemvalue="JUnit.PriceGoodsCalculationsTest.testMarkupTooBigException" />
+        <item itemvalue="JUnit.PriceGoodsCalculationsTest.checkExpirationDate" />
+        <item itemvalue="JUnit.SaleOpsTest.testReceipt" />
       </list>
     </recent_temporary>
   </component>
@@ -372,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681108900543</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="ledger added">
+      <created>1682843007931</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1682843007932</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -402,7 +413,8 @@
     <MESSAGE value="SaleOps.java" />
     <MESSAGE value="sonarlint fixed" />
     <MESSAGE value="props file fixxed" />
-    <option name="LAST_COMMIT_MESSAGE" value="props file fixxed" />
+    <MESSAGE value="ledger added" />
+    <option name="LAST_COMMIT_MESSAGE" value="ledger added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
