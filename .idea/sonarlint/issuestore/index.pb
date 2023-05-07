@@ -20,8 +20,6 @@ q
 Asrc/main/java/edu/nbu/projectshop/factories/FoodItemsFactory.java,f\f\fffbfaaf1b0b6d846f8b28d6b703843ba40c0f91
 ;
 log/log.out,4\5\4502d8d21ad8f630c6d40a4fc9e5f9852a9a933b
-^
-.src/main/java/edu/nbu/projectshop/RunShop.java,6\b\6b3ba6b26a70fcffc482d38459a6d3515523f30f
 j
 :src/main/java/edu/nbu/projectshop/stores/NonFoodStore.java,2\6\2605ffe6b2edb13f53e6b2625ad638af6689b157
 w
