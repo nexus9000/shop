@@ -34,11 +34,5 @@ b
 2src/main/java/edu/nbu/projectshop/goods/Items.java,a\b\abc0eba7a7c96dcb96c5dc91ebc95cd475214686
 f
 6src/main/java/edu/nbu/projectshop/goods/FoodItems.java,1\7\17f4da4a8dde5647a7ef2571ddbfd26143c86855
-d
-4src/main/java/edu/nbu/projectshop/tools/Receipt.java,b\c\bc6f285b0ff7ea2a28181afe73ba8d7acf720017
-i
-9src/main/java/edu/nbu/projectshop/operations/SaleOps.java,3\2\32a39ac74ae53c7382d2afdfaab2b6d8159b141c
-m
-=src/main/java/edu/nbu/projectshop/tools/GenerateSequence.java,0\7\070420cfcabaf0a506876e11977589cb12233681
 k
 ;src/test/java/edu/nbu/projectshop/FoodItemsFactoryTest.java,f\8\f87f21e0aff6249a1c6271510d4172ee0ce6c73f

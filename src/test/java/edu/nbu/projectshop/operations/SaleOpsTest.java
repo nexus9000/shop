@@ -14,10 +14,16 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.concurrent.atomic.AtomicReference;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -73,11 +79,16 @@ class SaleOpsTest {
     }
     @Test
     void testReceipt()throws Exception{
+        Optional<Long> currentSeq = GenerateSequence.generateSeq("shop.properties");
         AtomicReference<Receipt> receipt = saleOps.generateReceipt(
-                GenerateSequence.generateSeq("shop.properties"));
+                currentSeq);
 
         assertNotNull(receipt);
         logger.info(receipt);
-
+        File receiptsDir = new File("receipts");
+        //assertTrue(receiptsDir.mkdir());
+        String fileName = "receipts/"+currentSeq.get() + "receipts";
+        Path path = Paths.get(fileName);
+        Files.write(path, receipt.toString().getBytes(StandardCharsets.UTF_8));
     }
 }
