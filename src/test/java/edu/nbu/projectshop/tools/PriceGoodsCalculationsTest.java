@@ -65,6 +65,7 @@ class PriceGoodsCalculationsTest {
         assertEquals("Expired product", thrown.getMessage());
     }
 
+
     @Test
     @DisplayName("Test price item with discount")
     void testDiscountPrice() throws RuntimeException {

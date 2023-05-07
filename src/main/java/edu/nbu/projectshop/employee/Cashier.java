@@ -36,24 +36,30 @@ public class Cashier implements Employee {
     }
 
     @Override
+    public String toString() {
+        return "id " + this.getId() + " " + this.getNames();
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Cashier cashier = (Cashier) o;
+        if (!(o instanceof Cashier cashier)) return false;
 
         if (id != cashier.id) return false;
-        if (!firstName.equals(cashier.firstName)) return false;
-        return lastName.equals(cashier.lastName);
+        if (Double.compare(cashier.salary, salary) != 0) return false;
+        if (!Objects.equals(firstName, cashier.firstName)) return false;
+        return Objects.equals(lastName, cashier.lastName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName);
-    }
-
-    @Override
-    public String toString() {
-        return "id " + this.getId() + " " + this.getNames();
+        int result;
+        long temp;
+        result = id;
+        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
+        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
+        temp = Double.doubleToLongBits(salary);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
     }
 }

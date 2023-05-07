@@ -16,12 +16,8 @@ y
 Isrc/main/java/edu/nbu/projectshop/exceptions/ExpiredProductException.java,d\5\d5c51a5c96125a19a4a9d872bde5d6346e63fd4b
 q
 Asrc/test/java/edu/nbu/projectshop/tools/GenerateIdNumberTest.java,c\2\c2ffd38644d2889609209e454db5b9ba0fc21cf0
-h
-8src/main/java/edu/nbu/projectshop/employee/Employee.java,5\0\508a2344fbf7b3b108ce3ff6b04bf8eb1b99cab8
 q
 Asrc/main/java/edu/nbu/projectshop/factories/FoodItemsFactory.java,f\f\fffbfaaf1b0b6d846f8b28d6b703843ba40c0f91
-g
-7src/main/java/edu/nbu/projectshop/employee/Cashier.java,f\0\f0a5ff63b95f7964217640e7593f391491956e22
 ;
 log/log.out,4\5\4502d8d21ad8f630c6d40a4fc9e5f9852a9a933b
 ^
@@ -40,3 +36,9 @@ f
 6src/main/java/edu/nbu/projectshop/goods/FoodItems.java,1\7\17f4da4a8dde5647a7ef2571ddbfd26143c86855
 d
 4src/main/java/edu/nbu/projectshop/tools/Receipt.java,b\c\bc6f285b0ff7ea2a28181afe73ba8d7acf720017
+i
+9src/main/java/edu/nbu/projectshop/operations/SaleOps.java,3\2\32a39ac74ae53c7382d2afdfaab2b6d8159b141c
+m
+=src/main/java/edu/nbu/projectshop/tools/GenerateSequence.java,0\7\070420cfcabaf0a506876e11977589cb12233681
+k
+;src/test/java/edu/nbu/projectshop/FoodItemsFactoryTest.java,f\8\f87f21e0aff6249a1c6271510d4172ee0ce6c73f

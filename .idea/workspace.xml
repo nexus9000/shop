@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="ledger added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/employee/ShopCashiers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/employee/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/employee/Cashier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/operations/SaleOpsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/operations/SaleOpsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/PriceGoodsCalculationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/PriceGoodsCalculationsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,23 +76,7 @@
       <recent name="edu.nbu.projectshop" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PriceGoodsCalculationsTest.testDiscountPrice">
-    <configuration name="PriceGoodsCalculationsTest.checkExpirationDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="projectshop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.nbu.projectshop.tools.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.nbu.projectshop.tools" />
-      <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.tools.PriceGoodsCalculationsTest" />
-      <option name="METHOD_NAME" value="checkExpirationDate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SaleOpsTest.testReceipt">
     <configuration name="PriceGoodsCalculationsTest.testDiscountPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="projectshop" />
       <extension name="coverage">
@@ -138,6 +125,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SaleOpsTest.testCashierList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="projectshop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.nbu.projectshop.operations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.nbu.projectshop.operations" />
+      <option name="MAIN_CLASS_NAME" value="edu.nbu.projectshop.operations.SaleOpsTest" />
+      <option name="METHOD_NAME" value="testCashierList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SaleOpsTest.testReceipt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="projectshop" />
       <extension name="coverage">
@@ -156,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SaleOpsTest.testReceipt" />
+        <item itemvalue="JUnit.SaleOpsTest.testCashierList" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.testDiscountPrice" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.testPriceItem" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.testMarkupTooBigException" />
-        <item itemvalue="JUnit.PriceGoodsCalculationsTest.checkExpirationDate" />
-        <item itemvalue="JUnit.SaleOpsTest.testReceipt" />
       </list>
     </recent_temporary>
   </component>
@@ -383,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682843007932</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="ledger added">
+      <created>1682845218027</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1682845218027</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
