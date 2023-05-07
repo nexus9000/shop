@@ -86,7 +86,8 @@ class SaleOpsTest {
         assertNotNull(receipt);
         logger.info(receipt);
         File receiptsDir = new File("receipts");
-        //assertTrue(receiptsDir.mkdir());
+        if(!receiptsDir.exists())receiptsDir.mkdir();
+        assertTrue(receiptsDir.exists());
         String fileName = "receipts/"+currentSeq.get() + "receipts";
         Path path = Paths.get(fileName);
         Files.write(path, receipt.toString().getBytes(StandardCharsets.UTF_8));
