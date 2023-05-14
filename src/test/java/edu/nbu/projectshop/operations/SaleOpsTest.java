@@ -94,6 +94,12 @@ class SaleOpsTest {
 
     }
     @Test
+    @DisplayName("test profit for one month")
+    void testProfit()throws Exception{
+        int number_invoices = 100;
+
+    }
+    @Test
     void testReceipt()throws Exception{
         Optional<Long> currentSeq = GenerateSequence.generateSeq("shop.properties");
         AtomicReference<Receipt> receipt = saleOps.generateReceipt(

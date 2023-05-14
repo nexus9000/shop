@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="ShopCashiers.java added">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/RunShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/RunShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/NonFoodItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/NonFoodItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/operations/SaleOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/operations/SaleOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/PriceGoodsCalculations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/PriceGoodsCalculations.java" afterDir="false" />
+    <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="final projects finished">
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/operations/SaleOpsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/operations/SaleOpsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/PriceGoodsCalculationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/PriceGoodsCalculationsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -431,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683447559382</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="final projects finished">
+      <created>1684069405481</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1684069405481</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,7 +463,8 @@
     <MESSAGE value="props file fixxed" />
     <MESSAGE value="ledger added" />
     <MESSAGE value="ShopCashiers.java added" />
-    <option name="LAST_COMMIT_MESSAGE" value="ShopCashiers.java added" />
+    <MESSAGE value="final projects finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="final projects finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
