@@ -70,10 +70,7 @@ public  class NonFoodItems implements Items {
     }
     @Override
     public String toString() {
-        return "NonFoodItems{" +
-                "typeItems='" + typeItems + '\'' +
-                ", itemName='" + itemName + '\'' +
-                ", quantity=" + quantity +
-                '}';
+        return " itemName='" + itemName + '\'';
+
     }
 }

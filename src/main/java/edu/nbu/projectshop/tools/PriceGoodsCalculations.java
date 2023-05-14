@@ -13,12 +13,24 @@ public class PriceGoodsCalculations implements PriceCalculations {
     private final BigDecimal percentage;
     private final Date productionDate;
     private Date expDate;
-
-    public PriceGoodsCalculations(BigDecimal deliveryPrice, BigDecimal percentage, Date productionDate) {
+    private int number;
+    public PriceGoodsCalculations(BigDecimal deliveryPrice, BigDecimal percentage, Date productionDate,int number) {
         this.deliveryPrice = deliveryPrice;
         this.percentage = percentage;
         this.productionDate = productionDate;
+        this.number = number;
+    }
 
+    public BigDecimal getDeliveryPrice() {
+        return deliveryPrice;
+    }
+
+    public BigDecimal getPercentage() {
+        return percentage;
+    }
+
+    public int getNumber() {
+        return number;
     }
 
     @Override
@@ -39,11 +51,7 @@ public class PriceGoodsCalculations implements PriceCalculations {
 
     }
 
-    @Override
-    public String toString() {
-        return "PriceGoodsCalculations{}";
-    }
-    public BigDecimal calculateRealPrice(Date currentDate,Date productionDate, int period)throws ExpiredProductException{
+    public BigDecimal calculateRealPrice(Date currentDate, Date productionDate, int period)throws ExpiredProductException{
         BigDecimal price ;
         if(checkExpirationDate(currentDate,productionDate,period)){
             price = priceCalculation(percentage, deliveryPrice);
@@ -60,5 +68,15 @@ public class PriceGoodsCalculations implements PriceCalculations {
             throw new ExpiredProductException("Expired product");
         }
 
+    }
+
+    @Override
+    public String toString() {
+        return "PriceGoodsCalculations{" +
+                "deliveryPrice=" + deliveryPrice +
+                ", percentage=" + percentage +
+                ", productionDate=" + productionDate +
+                ", expDate=" + expDate +
+                '}';
     }
 }

@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1250a3fe-5114-44be-b799-f4c622619322" name="Changes" comment="ShopCashiers.java added">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/RunShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/RunShop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/NonFoodItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/goods/NonFoodItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/operations/SaleOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/operations/SaleOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/PriceGoodsCalculations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/PriceGoodsCalculations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/operations/SaleOpsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/operations/SaleOpsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/PriceGoodsCalculationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/PriceGoodsCalculationsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,8 +163,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SaleOpsTest.testReceipt" />
-        <item itemvalue="JUnit.SaleOpsTest.testCashierList" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.testDiscountPrice" />
+        <item itemvalue="JUnit.SaleOpsTest.testCashierList" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.testPriceItem" />
         <item itemvalue="JUnit.PriceGoodsCalculationsTest.testMarkupTooBigException" />
       </list>
@@ -417,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683447130678</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="ShopCashiers.java added">
+      <created>1683447559382</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1683447559382</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,6 +477,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/edu/nbu/projectshop/tools/GenerateIdNumberTest.java</url>
           <line>17</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/nbu/projectshop/tools/PriceGoodsCalculations.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

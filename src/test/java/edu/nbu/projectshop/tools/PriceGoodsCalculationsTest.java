@@ -30,7 +30,9 @@ class PriceGoodsCalculationsTest {
         prDate = sdf.parse(productionDate);
         currentDate = (new Date());
         percentage = BigDecimal.valueOf(0.30).setScale(2);
-        pgc = new PriceGoodsCalculations(deliveryPrice, percentage, prDate);
+        int units_num = 10;
+        pgc = new PriceGoodsCalculations(deliveryPrice, percentage, prDate, units_num);
+        logger.info(pgc);
     }
 
     @Test
